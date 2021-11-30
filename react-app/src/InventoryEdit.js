@@ -35,7 +35,7 @@ class InventoryEdit extends Component {
         event.preventDefault();
         const {item} = this.state;
 
-        await fetch('http://localhost:8080/api/inventories', {
+        await fetch('http://localhost:8080/api/inventory', {
             method: (item._id) ? 'PUT' : 'POST',
             headers: {
                 'Accept': 'application/json',
